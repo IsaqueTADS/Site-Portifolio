@@ -1,0 +1,22 @@
+.experiencia {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.experiencia .subititulo {
+  color: #E0E0E0;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 60cg;
+}
+.experiencia-texto strong {
+  color: #141414;
+}
