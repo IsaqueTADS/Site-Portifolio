@@ -101,7 +101,7 @@
 }
 
 @media (max-width: 800px) {
-  .experiencia{
+  .experiencia {
     grid-template-columns: 1fr;
   }
 }
@@ -110,5 +110,14 @@
   .empresa {
     grid-template-columns: 1fr;
   }
-  
+  .empresa-texto {
+    grid-row: 3;
+  }
+  .empresa-ano {
+    position: static;
+    grid-row: 2;
+    color: #525252;
+    font-size: 0.875rem;
+    text-align: left;
+  }
 }
