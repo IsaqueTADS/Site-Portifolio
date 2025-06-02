@@ -4,7 +4,7 @@
   margin-right: auto;
   padding: 40px 20px;
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   gap: 100px;
   align-items: center;
   justify-items: center;
@@ -16,6 +16,7 @@
   margin-bottom: 30px;
   position: relative;
 }
+
 .introducaog h1:before {
   content: "";
   display: block;
@@ -30,7 +31,7 @@
 
 .introducaog p {
   font-size: 1.5rem;
-  color: #525252;
+  color: var(--cor-texto-secundario); /* Reutilizando a mesma variável */
 }
 
 @media (max-width: 900px) {
@@ -38,6 +39,7 @@
     font-size: 3rem;
   }
 }
+
 @media (max-width: 700px) {
   .introducaog {
     grid-template-columns: 1fr;
@@ -52,6 +54,7 @@
     left: 0px;
   }
 }
+
 @media (max-width: 470px) {
   .introducaog {
     justify-content: center;

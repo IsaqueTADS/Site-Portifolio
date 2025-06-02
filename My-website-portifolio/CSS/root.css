@@ -1,0 +1,16 @@
+:root {
+  --cor-fundo-branco: #ffffff;
+  /* --cor-texto-secundario: #525252; */
+  --cor-texto-primario: #141414;
+  --cor-fundo-cinza: #f5f5f5;
+  --fonte-principal: "Fira Sans", Arial, sans-serif;
+
+  /* Novas cores adicionadas */
+  --cor-branco: #ffffff;
+  --cor-preto: #000000;
+  --cor-texto-cinza: #a3a3a3;
+  --cor-texto-cinza-escuro: #8f8f8f;
+  --cor-destaque-verde: linear-gradient(#b6f829, #67dd0a);
+  --cor-texto-cinza-medio: #cccccc;
+}
+

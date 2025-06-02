@@ -6,8 +6,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
 }
+
 .header-menu {
   display: flex;
   flex-wrap: wrap;
@@ -22,13 +22,12 @@ header {
   padding: 10px 20px;
   border: 1px solid transparent;
   text-decoration: none;
-  color: #141414;
+  color: var(--cor-texto-primario); 
   display: block;
 }
 
 .header-menu a:hover {
-  border: 1px solid #141414;
-  border-radius: 4px;
+  border: 1px solid var(--cor-texto-primario); 
 }
 
 @media (max-width: 700px) {
@@ -41,7 +40,7 @@ header {
     gap: 20px;
   }
   .header-menu a {
-    background-color: #f5f5f5;
+    background-color: var(--cor-fundo-cinza); 
     border-radius: 4px;
   }
 }

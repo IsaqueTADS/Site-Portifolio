@@ -1,5 +1,5 @@
 .footer {
-  background-color: #000000;
+  background-color: var(--cor-preto); /* Reutilizando variável existente */
 }
 
 .footer-container {
@@ -15,25 +15,25 @@
 .footer-texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  color: #cccccc;
+  color: var(--cor-texto-cinza-medio); /* Nova variável aplicada */
 }
 
 .footer-contato li {
   font-weight: bold;
   font-size: 2.25rem;
   line-height: 1.1;
-  color: #ffffff;
-  margin-bottom: 3opx;
+  color: var(--cor-branco); /* Reutilizando variável existente */
+  margin-bottom: 30px;
 }
 
 .footer-contato a {
-  color: #ffffff;
+  color: var(--cor-branco); /* Reutilizando variável existente */
 }
 
 .footer-copy {
   grid-column: 1 / -1;
-  font-size: 1.125 rem;
-  color: #8f8f8f;
+  font-size: 1.125rem;
+  color: var(--cor-texto-cinza-escuro); /* Reutilizando variável existente */
 }
 
 @media (max-width: 800px) {

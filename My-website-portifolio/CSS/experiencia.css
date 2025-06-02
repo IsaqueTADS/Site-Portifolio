@@ -1,3 +1,21 @@
+:root {
+  /* Cores existentes */
+  --cor-texto-secundario: #525252;
+  --cor-texto-primario: #141414;
+  --cor-fundo-cinza: #f5f5f5;
+  --fonte-principal: "Fira Sans", Arial, sans-serif;
+  --cor-branco: #ffffff;
+  --cor-preto: #000000;
+  --cor-texto-cinza: #a3a3a3;
+  --cor-texto-cinza-escuro: #8f8f8f;
+  --cor-texto-cinza-medio: #cccccc;
+  --cor-destaque-verde: linear-gradient(#b6f829, #67dd0a);
+
+  /* Nova cor adicionada */
+  --cor-texto-cinza-claro: #e0e0e0;
+  --cor-destaque-verde-escuro: #214a00;
+}
+
 .experiencia {
   max-width: 1200px;
   margin: 0 auto;
@@ -8,7 +26,7 @@
 }
 
 .experiencia .subtitulo {
-  color: #e0e0e0;
+  color: var(--cor-texto-cinza-claro); /* Nova variável aplicada */
 }
 
 .experiencia-texto {
@@ -16,26 +34,29 @@
   line-height: 1.33;
   margin-bottom: 60px;
   max-width: 60ch;
-  color: #525252;
+  color: var(--cor-texto-secundario); /* Variável existente */
 }
+
 .experiencia-texto strong {
-  color: #141414;
+  color: var(--cor-texto-primario); /* Variável existente */
 }
+
 .empresa {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: var(--cor-fundo-cinza); /* Variável existente */
   margin-bottom: 20px;
   border-radius: 4px;
   position: relative;
 }
+
 .empresa::before {
   content: "";
   width: 4px;
   height: 20px;
-  background-image: linear-gradient(#b6f829, #67dd0a);
+  background-image: var(--cor-destaque-verde); /* Variável existente */
   position: absolute;
   margin-top: 20px;
   left: -4px;
@@ -45,7 +66,7 @@
   position: absolute;
   top: 22px;
   left: -100px;
-  color: #525252;
+  color: var(--cor-texto-secundario); /* Variável existente */
   font-size: 0.875rem;
   text-align: right;
   width: 80px;
@@ -60,8 +81,9 @@
 .empresa-texto {
   font-size: 0.87rem;
   line-height: 1.4;
-  color: #525252;
+  color: var(--cor-texto-secundario); /* Variável existente */
 }
+
 .empresa-habilidades {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +95,7 @@
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--cor-branco); /* Variável existente */
   padding: 5px 10px;
 }
 
@@ -86,14 +108,15 @@
   border: 2px solid transparent;
   border-radius: 4px;
   padding: 10px 15px;
-  background-image: linear-gradient(#b6f829, #67dd0a);
+  background-image: var(--cor-destaque-verde); /* Variável existente */
   justify-self: start;
-  color: #214a00;
+  color: var(--cor-destaque-verde-escuro); /* Nova variável */
 }
 
 .empresa a:hover {
-  border: 2px solid #000000;
+  border: 2px solid var(--cor-preto); /* Variável existente */
 }
+
 .empresa-videos {
   position: relative;
   max-width: 100%;
@@ -101,6 +124,7 @@
   height: 0;
   overflow: hidden;
 }
+
 .empresa-videos iframe {
   position: absolute;
   top: 0px;
@@ -117,7 +141,7 @@
   .empresa-ano {
     position: static;
     grid-row: 2;
-    color: #525252;
+    color: var(--cor-texto-secundario); /* Variável existente */
     font-size: 0.875rem;
     text-align: left;
   }
@@ -142,7 +166,7 @@
   .empresa-ano {
     position: static;
     grid-row: 2;
-    color: #525252;
+    color: var(--cor-texto-secundario); /* Variável existente */
     font-size: 0.875rem;
     text-align: left;
   }
